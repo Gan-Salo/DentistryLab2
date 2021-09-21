@@ -1,6 +1,6 @@
 #include "cabinet.h"
 
-struct cabinet cab_create()
+cabinet cab_create()
 {
 	cabinet data;
 	data.number = 213;
@@ -9,7 +9,7 @@ struct cabinet cab_create()
 	return data;
 }
 
-struct cabinet cab_create(int num, string otd, int ar)
+cabinet cab_create(int num, string otd, int ar)
 {
 	cabinet data;
 	data.number = num;

@@ -17,3 +17,8 @@ struct zapis
 	string date;		//Дата и время приема
 };
 
+/*Прототипы функций для структуры типа dolznost*/
+
+struct zapis zap_create();
+struct zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
+void zap_view(zapis a);

@@ -11,7 +11,13 @@ struct doctor
 {
 	string fio;			//ФИО
 	int age;			//Возраст
-	int phone;			//Номер телефона
-	dolznost title;		//Название должности
+	string phone;			//Номер телефона
+	dolznost dolzn;		//Название должности
 	string kategory;	//Категория 
 };
+
+/*Прототипы функций для структуры типа dolznost*/
+
+struct doctor doc_create();
+struct doctor doc_create(string f, int ag, string ph, dolznost tl, string kat);
+void doc_view(doctor a);

@@ -1,12 +1,12 @@
 ﻿// DentistryLab2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
 #include <iostream>
 #include <string>
 #include "usluga.h"
 #include "doctor.h"
 #include "patient.h"
 #include "cabinet.h"
+#include "zapis.h"
 
 using namespace std;
 
@@ -31,4 +31,24 @@ int main()
 
     usl_view(test1_usl);
     usl_view(test2_usl);
+
+    doctor test1_doc = doc_create();
+    doctor test2_doc = doc_create("Авраамов В.С.", 24, "+79832321232", test1_dl, "Высшая");
+
+    doc_view(test1_doc);
+    doc_view(test2_doc);
+
+    patient test1_pat = pat_create();
+    patient test2_pat = pat_create("Легостаев К.М.", 31, "+79134443315");
+
+    pat_view(test1_pat);
+    pat_view(test2_pat);
+
+    zapis test1_zap = zap_create();
+    zapis test2_zap = zap_create(test1_usl, test1_doc, test1_pat, test1_cab, "15:10 24.11.2021");
+
+    struct zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
+
+    zap_view(test1_zap);
+    zap_view(test2_zap);
 }

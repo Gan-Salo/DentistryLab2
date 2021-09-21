@@ -1,6 +1,6 @@
 #include "dolznost.h"
 
-struct dolznost dl_create()
+dolznost dl_create()
 {
 	dolznost data;
 	data.title = "Тестовый";
@@ -8,7 +8,7 @@ struct dolznost dl_create()
 	return data;
 }
 
-struct dolznost dl_create(string ti, string pod)
+dolznost dl_create(string ti, string pod)
 {
 	dolznost data;
 	data.title = ti;
