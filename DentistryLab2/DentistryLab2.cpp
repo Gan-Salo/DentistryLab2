@@ -2,10 +2,23 @@
 //
 
 #include <iostream>
+#include <string>
+#include "usluga.h"
+#include "doctor.h"
+#include "patient.h"
+#include "cabinet.h"
+
+using namespace std;
 
 int main()
-{
-    std::cout << "Hello World!\n";
+{     
+    setlocale(LC_ALL, "Russian");
+
+    cabinet abc = cab_create();
+    cabinet abc2 = cab_create(123, "Отделение №1", 23);
+
+    cab_view(abc);
+    cab_view(abc2);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

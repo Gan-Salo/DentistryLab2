@@ -9,7 +9,12 @@ using namespace std;
 struct cabinet
 {	
 	int number;		//Номер кабинета
-	string otdel;	//Отделение, в которое входит кабинет
+	string otdelen;	//Отделение, в которое входит кабинет
 	int area;		//Площадь кабинета
 };
 
+/*Прототипы функций для структуры типа cabinet*/
+
+struct cabinet cab_create(); 
+struct cabinet cab_create(int num, string otd, int ar);
+void cab_view(cabinet a);

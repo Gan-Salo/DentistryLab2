@@ -12,3 +12,7 @@ struct dolznost
 	string podrazdel;	//ѕодразделение, к которому относитс€ должность
 }; 
 
+
+struct dolznost dl_create();
+struct dolznost dl_create(int num, string otd, int ar);
+void dl_view(dolznost a);
