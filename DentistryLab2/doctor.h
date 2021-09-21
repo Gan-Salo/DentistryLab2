@@ -1,6 +1,5 @@
 #include <string>
 #include <iostream>
-#include <Windows.h>
 #include "dolznost.h"
 
 using namespace std;

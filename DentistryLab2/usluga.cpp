@@ -18,7 +18,7 @@ struct usluga usl_create(string ti, int co)
 
 void usl_view(usluga a)
 {
-	cout << "_Кабинет_\n";
+	cout << "_Услуга_\n";
 	cout << "Название услуги: ";
 	cout << a.title;
 	cout << " || Стоимость услуги: ";

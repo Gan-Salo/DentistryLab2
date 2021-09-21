@@ -1,5 +1,6 @@
 #include "zapis.h"
 
+/*Функция создания*/
 zapis zap_create()
 {
 	zapis data;
@@ -45,6 +46,7 @@ zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat)
 	return data;
 }
 
+/*Функция вывода*/
 void zap_view(zapis a)
 {
 	cout << "_Запись на прием_\n";
@@ -61,6 +63,7 @@ void zap_view(zapis a)
 	cout << " ||\n\n";
 }
 
+/*Пользовательская функция*/
 void zap_napomin(zapis a)
 {
 	cout << "Уважаемый " << a.klient.fio << ",";

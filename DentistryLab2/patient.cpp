@@ -20,7 +20,7 @@ struct patient pat_create(string f, int ag, string ph)
 
 void pat_view(patient a)
 {
-	cout << "_Врач_\n";
+	cout << "_Пациент_\n";
 	cout << "ФИО пациента: ";
 	cout << a.fio;
 	cout << " || Возраст: ";
