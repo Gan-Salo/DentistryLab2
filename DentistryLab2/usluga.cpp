@@ -25,3 +25,11 @@ void usl_view(usluga a)
 	cout << a.cost;
 	cout << " ||\n\n";
 }
+
+void usl_costdollars(usluga a)
+{
+	cout << "\nСтоимость услуги с названием '";
+	cout << a.title << "': ";
+	cout << (a.cost / 75);
+	cout << " долларов\n\n";
+}

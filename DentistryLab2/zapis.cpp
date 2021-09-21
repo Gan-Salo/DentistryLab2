@@ -60,3 +60,10 @@ void zap_view(zapis a)
 	cout << a.date;
 	cout << " ||\n\n";
 }
+
+void zap_napomin(zapis a)
+{
+	cout << "Уважаемый " << a.klient.fio << ",";
+	cout << "напоминаем вам о том, что " << a.date << " в " << a.cabnum.number;
+	cout << " кабинете вам будет оказана следующая услуга: " << a.uslname.title << "\n\n";
+}

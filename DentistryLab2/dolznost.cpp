@@ -25,3 +25,8 @@ void dl_view(dolznost a)
 	cout << a.podrazdel;
 	cout << " ||\n\n";
 }
+
+void dolzn_pochet(dolznost a)
+{
+	cout << a.title << " - очень почетная должность!\n\n";
+}

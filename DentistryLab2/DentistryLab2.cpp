@@ -51,4 +51,16 @@ int main()
 
     zap_view(test1_zap);
     zap_view(test2_zap);
+
+    usl_costdollars(test2_usl);
+
+    area_get(test2_cab);
+
+    dolzn_pochet(test2_dl);
+
+    doc_info(test2_doc);
+
+    zap_napomin(test2_zap);
+
+    pat_present(test2_pat);
 }

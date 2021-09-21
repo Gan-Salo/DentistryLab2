@@ -29,3 +29,10 @@ void cab_view(cabinet a)
 	cout << a.area;
 	cout << " ||\n\n";
 }
+
+void area_get(cabinet a)
+{
+	cout << "Площадь кабинета с номером ";
+	cout << a.number;
+	cout << " равна " << a.area << " кв. метра(ов)\n\n";
+}

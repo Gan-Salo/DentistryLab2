@@ -22,3 +22,4 @@ struct zapis
 struct zapis zap_create();
 struct zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
 void zap_view(zapis a);
+void zap_napomin(zapis a);

@@ -17,3 +17,4 @@ struct usluga
 struct usluga usl_create();
 struct usluga usl_create(string ti, int co);
 void usl_view(usluga a);
+void usl_costdollars(usluga a);

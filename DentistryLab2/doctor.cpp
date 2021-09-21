@@ -12,6 +12,8 @@ doctor doc_create()
 	data_dolzn.podrazdel = "Тестовое подразделение";
 
 	data.kategory = "Тестовая категория";
+
+	data.dolzn = data_dolzn;
 	return data;
 }
 
@@ -40,4 +42,11 @@ void doc_view(doctor a)
 	cout << " || Категория: ";
 	cout << a.kategory;
 	cout << " ||\n\n";
+}
+
+void doc_info(doctor a)
+{
+	cout << "Телефон " << a.phone;
+	cout << " принадлежит этому врачу: " << a.fio;
+	cout << "\n\n";
 }
