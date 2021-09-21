@@ -12,3 +12,8 @@ struct usluga
 	int cost;	//Стоимость услуги
 };
 
+/*Прототипы функций для структуры типа dolznost*/
+
+struct usluga usl_create();
+struct usluga usl_create(string ti, int co);
+void usl_view(usluga a);

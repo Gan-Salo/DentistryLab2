@@ -12,7 +12,8 @@ struct dolznost
 	string podrazdel;	//Подразделение, к которому относится должность
 }; 
 
+/*Прототипы функций для структуры типа dolznost*/
 
 struct dolznost dl_create();
-struct dolznost dl_create(int num, string otd, int ar);
+struct dolznost dl_create(string ti, string pod);
 void dl_view(dolznost a);

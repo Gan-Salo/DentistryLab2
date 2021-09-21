@@ -4,7 +4,7 @@ struct cabinet cab_create()
 {
 	cabinet data;
 	data.number = 213;
-	data.otdelen = "Хирургическое отделение";
+	data.otdelen = "Пробное отделение";
 	data.area = 40;
 	return data;
 }

@@ -15,3 +15,6 @@ struct cabinet
 
 /*Прототипы функций для структуры типа cabinet*/
 
+struct cabinet cab_create(); 
+struct cabinet cab_create(int num, string otd, int ar);
+void cab_view(cabinet a);
