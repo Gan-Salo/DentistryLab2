@@ -140,10 +140,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DentistryLab2.cpp" />
-    <ClCompile Include="Cabinet.cpp" />
+    <ClCompile Include="cabinet.cpp" />
+    <ClCompile Include="doctor.cpp" />
+    <ClCompile Include="dolznost.cpp" />
+    <ClCompile Include="patient.cpp" />
+    <ClCompile Include="usluga.cpp" />
+    <ClCompile Include="zapis.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cabinet.h" />
+    <ClInclude Include="cabinet.h" />
+    <ClInclude Include="doctor.h" />
+    <ClInclude Include="dolznost.h" />
+    <ClInclude Include="patient.h" />
+    <ClInclude Include="usluga.h" />
+    <ClInclude Include="zapis.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
