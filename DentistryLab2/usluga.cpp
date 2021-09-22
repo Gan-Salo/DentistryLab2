@@ -1,6 +1,6 @@
 #include "usluga.h"
 
-struct usluga usl_create()
+usluga usl_create()
 {
 	usluga data;
 	data.title = "Тестовая услуга";
@@ -8,11 +8,23 @@ struct usluga usl_create()
 	return data;
 }
 
-struct usluga usl_create(string ti, int co)
+usluga usl_create(string ti, int co)
 {
 	usluga data;
 	data.title = ti;
 	data.cost = co;
+	return data;
+}
+
+usluga usl_get()
+{
+	usluga data;
+	cout << "_Ввод услуги_\n";
+	cout << "Введите название услуги: ";
+	cin >> data.title;
+	cout << "\nВведите стоимость услуги: ";
+	cin >> data.cost;
+	cout << "\n\n";
 	return data;
 }
 

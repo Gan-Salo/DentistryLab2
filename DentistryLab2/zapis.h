@@ -19,7 +19,8 @@ struct zapis
 
 /*Прототипы функций для структуры типа dolznost*/
 
-struct zapis zap_create();
-struct zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
+zapis zap_create();
+zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
+zapis zap_get();
 void zap_view(zapis a);
 void zap_napomin(zapis a);

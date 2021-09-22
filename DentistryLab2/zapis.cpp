@@ -46,6 +46,20 @@ zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat)
 	return data;
 }
 
+zapis zap_get()
+{
+	zapis data;
+	cout << "_¬вод записи_\n";
+	data.uslname = usl_get();
+	data.dentist = doc_get();
+	data.klient = pat_get();
+	data.cabnum = cab_get();
+	cout << "\n¬ведите дату и врем€ приема: ";
+	cin >> data.date;
+	cout << "\n\n";
+	return data;
+}
+
 /*‘ункци€ вывода*/
 void zap_view(zapis a)
 {

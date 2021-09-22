@@ -14,7 +14,8 @@ struct patient
 
 /*Прототипы функций для структуры типа dolznost*/
 
-struct patient pat_create();
-struct patient pat_create(string f, int ag, string ph);
+patient pat_create();
+patient pat_create(string f, int ag, string ph);
+patient pat_get();
 void pat_view(patient a);
 void pat_present(patient a);

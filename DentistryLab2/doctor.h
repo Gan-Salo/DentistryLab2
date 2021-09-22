@@ -17,7 +17,8 @@ struct doctor
 
 /*Прототипы функций для структуры типа dolznost*/
 
-struct doctor doc_create();
-struct doctor doc_create(string f, int ag, string ph, dolznost tl, string kat);
-void doc_view(doctor a);
-void doc_info(doctor a);
+doctor doc_create(); //Прототип функции для создания структуры с заранее введенными данными 
+doctor doc_create(string f, int ag, string ph, dolznost tl, string kat);		//Прототип функции для создания структуры с вводимыми пользователем данными 
+doctor doc_get();
+void doc_view(doctor a);	//Функция вывода структуры с ланными
+void doc_info(doctor a);	//Пользовательская функция

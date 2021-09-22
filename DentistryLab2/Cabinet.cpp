@@ -18,6 +18,20 @@ cabinet cab_create(int num, string otd, int ar)
 	return data;
 }
 
+cabinet cab_get()
+{
+	cabinet data;
+	cout << "_Ввод кабинета_\n";
+	cout << "Введите номер кабинета: ";
+	cin >> data.number;
+	cout << "\nВведите отделение: ";
+	cin >> data.otdelen;
+	cout << "\nВведите площадь кабинета: ";
+	cin >> data.area;
+	cout << "\n\n";
+	return data;
+}
+
 void cab_view(cabinet a)
 {
 	cout << "_Кабинет_\n";

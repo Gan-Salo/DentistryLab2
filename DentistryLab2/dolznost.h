@@ -13,7 +13,8 @@ struct dolznost
 
 /*Прототипы функций для структуры типа dolznost*/
 
-struct dolznost dl_create();
-struct dolznost dl_create(string ti, string pod);
+dolznost dl_create();
+dolznost dl_create(string ti, string pod);
+dolznost dl_get();
 void dl_view(dolznost a);
 void dolzn_pochet(dolznost a);

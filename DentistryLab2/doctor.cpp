@@ -28,6 +28,23 @@ doctor doc_create(string f, int ag, string ph, dolznost dl, string kat)
 	return data;
 }
 
+doctor doc_get()
+{
+	doctor data;
+	cout << "_Ввод доктора_\n";
+	cout << "Введите ФИО доктора: ";
+	cin >> data.fio;
+	cout << "\nВведите возраст доктора: ";
+	cin >> data.age;
+	cout << "\nВведите номер телефона доктора: ";
+	cin >> data.phone;
+	data.dolzn = dl_get();
+	cout << "\nВведите категорию доктора: ";
+	cin >> data.kategory;
+	cout << "\n\n";
+	return data;
+}
+
 void doc_view(doctor a)
 {
 	cout << "_Врач_\n";

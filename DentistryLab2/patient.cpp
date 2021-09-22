@@ -1,6 +1,6 @@
 #include "patient.h"
 
-struct patient pat_create()
+patient pat_create()
 {
 	patient data;
 	data.fio = "Тестовые ФИО пациента";
@@ -9,12 +9,26 @@ struct patient pat_create()
 	return data;
 }
 
-struct patient pat_create(string f, int ag, string ph)
+patient pat_create(string f, int ag, string ph)
 {
 	patient data;
 	data.fio = f;
 	data.age = ag;
 	data.phone = ph;
+	return data;
+}
+
+patient pat_get()
+{
+	patient data;
+	cout << "_Ввод пациента_\n";
+	cout << "Введите ФИО пациента: ";
+	cin >> data.fio;
+	cout << "\nВведите возраст пациента: ";
+	cin >> data.age;
+	cout << "\nВведите номер телефона пациента: ";
+	cin >> data.phone;
+	cout << "\n\n";
 	return data;
 }
 

@@ -16,6 +16,18 @@ dolznost dl_create(string ti, string pod)
 	return data;
 }
 
+dolznost dl_get()
+{
+	dolznost data;
+	cout << "_Ввод должности_\n";
+	cout << "Введите название должности: ";
+	cin >> data.title;
+	cout << "\nВведите подразделение: ";
+	cin >> data.podrazdel;
+	cout << "\n\n";
+	return data;
+}
+
 void dl_view(dolznost a)
 {
 	cout << "_Должность_\n";
