@@ -16,6 +16,6 @@ struct cabinet
 
 cabinet cab_create(); //Прототип функции для создания структуры с заранее введенными данными
 cabinet cab_create(int num, string otd, int ar); //Прототип функции для создания структуры с вводимыми пользователем данными 
-cabinet cab_get();
-void cab_view(cabinet a);	//Функция вывода структуры с ланными	
-void area_get(cabinet a);	//Пользовательская функция
+cabinet cab_get();	//Прототип функции ввода
+void cab_view(cabinet a);	//Прототип функции вывода	
+void area_get(cabinet a);	//Прототип пользовательская функции (вывод площади конкретного кабинета)
