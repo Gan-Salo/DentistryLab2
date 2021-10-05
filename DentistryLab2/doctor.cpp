@@ -1,5 +1,6 @@
 #include "doctor.h"
 
+/*Функция для создания структуры с заранее введенными данными*/
 doctor doc_create()
 {
 	doctor data;
@@ -17,6 +18,7 @@ doctor doc_create()
 	return data;
 }
 
+/*Прототип функции для создания структуры с вводимыми пользователем данными*/
 doctor doc_create(string f, int ag, string ph, dolznost dl, string kat)
 {
 	doctor data;
@@ -28,6 +30,7 @@ doctor doc_create(string f, int ag, string ph, dolznost dl, string kat)
 	return data;
 }
 
+/*Функция ввода*/
 doctor doc_get()
 {
 	doctor data;
@@ -45,6 +48,7 @@ doctor doc_get()
 	return data;
 }
 
+/*Функция вывода*/
 void doc_view(doctor a)
 {
 	cout << "_Врач_\n";
@@ -61,6 +65,7 @@ void doc_view(doctor a)
 	cout << " ||\n\n";
 }
 
+/*Пользовательская функция(вывод номера телефона определенного врача)*/
 void doc_info(doctor a)
 {
 	cout << "Телефон " << a.phone;

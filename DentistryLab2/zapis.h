@@ -19,8 +19,8 @@ struct zapis
 
 /*Прототипы функций для структуры типа dolznost*/
 
-zapis zap_create();
-zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);
-zapis zap_get();
-void zap_view(zapis a);
-void zap_napomin(zapis a);
+zapis zap_create();		//Функция создания 
+zapis zap_create(usluga nam, doctor den, patient kl, cabinet cab, string dat);	//Функция создания (с параметрами)
+zapis zap_get();	//Функция ввода
+void zap_view(zapis a);		//Функция вывода
+void zap_napomin(zapis a);	//Пользовательская функция (вывод напоминания о приёме)

@@ -1,5 +1,6 @@
 #include "usluga.h"
 
+/*Функция для создания структуры с заранее введенными данными*/
 usluga usl_create()
 {
 	usluga data;
@@ -8,6 +9,7 @@ usluga usl_create()
 	return data;
 }
 
+/*Прототип функции для создания структуры с вводимыми пользователем данными*/
 usluga usl_create(string ti, int co)
 {
 	usluga data;
@@ -16,6 +18,7 @@ usluga usl_create(string ti, int co)
 	return data;
 }
 
+/*Функция ввода*/
 usluga usl_get()
 {
 	usluga data;
@@ -28,6 +31,7 @@ usluga usl_get()
 	return data;
 }
 
+/*Функция вывода*/
 void usl_view(usluga a)
 {
 	cout << "_Услуга_\n";
@@ -38,6 +42,7 @@ void usl_view(usluga a)
 	cout << " ||\n\n";
 }
 
+/*Пользовательская функция (вывод цены услуги в долларах(фиксированный курс))*/
 void usl_costdollars(usluga a)
 {
 	cout << "\nСтоимость услуги с названием '";

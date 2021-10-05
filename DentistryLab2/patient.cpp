@@ -1,5 +1,6 @@
 #include "patient.h"
 
+/*Функция для создания структуры с заранее введенными данными*/
 patient pat_create()
 {
 	patient data;
@@ -9,6 +10,7 @@ patient pat_create()
 	return data;
 }
 
+/*Прототип функции для создания структуры с вводимыми пользователем данными*/
 patient pat_create(string f, int ag, string ph)
 {
 	patient data;
@@ -18,6 +20,7 @@ patient pat_create(string f, int ag, string ph)
 	return data;
 }
 
+/*Функция ввода*/
 patient pat_get()
 {
 	patient data;
@@ -32,6 +35,7 @@ patient pat_get()
 	return data;
 }
 
+/*Функция вывода*/
 void pat_view(patient a)
 {
 	cout << "_Пациент_\n";
@@ -44,6 +48,7 @@ void pat_view(patient a)
 	cout << " ||\n\n";
 }
 
+/*Пользовательская функция (поздравление пациента с Днем рождения)*/
 void pat_present(patient a)
 {
 	cout << "Уважаемый " << a.fio << ", спасибо, что пользуетесь услугами нашей компании! ";

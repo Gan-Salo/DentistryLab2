@@ -19,6 +19,6 @@ struct doctor
 
 doctor doc_create(); //Прототип функции для создания структуры с заранее введенными данными 
 doctor doc_create(string f, int ag, string ph, dolznost tl, string kat);		//Прототип функции для создания структуры с вводимыми пользователем данными 
-doctor doc_get();
-void doc_view(doctor a);	//Функция вывода структуры с ланными
-void doc_info(doctor a);	//Пользовательская функция
+doctor doc_get();	//Прототип функции ввода
+void doc_view(doctor a);	//Прототип функции вывода
+void doc_info(doctor a);	//Прототип пользовательской функции (вывод номера телефона определенного врача)

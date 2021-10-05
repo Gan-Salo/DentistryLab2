@@ -14,8 +14,8 @@ struct patient
 
 /*Прототипы функций для структуры типа dolznost*/
 
-patient pat_create();
-patient pat_create(string f, int ag, string ph);
-patient pat_get();
-void pat_view(patient a);
-void pat_present(patient a);
+patient pat_create();	//Прототип функции для создания структуры с заранее введенными данными  
+patient pat_create(string f, int ag, string ph);	//Прототип функции для создания структуры с вводимыми пользователем данными 
+patient pat_get();		//Прототип функции ввода
+void pat_view(patient a);		//Прототип функции вывода
+void pat_present(patient a);	//Прототип пользовательской функции (поздравление пациента с Днем рождения)

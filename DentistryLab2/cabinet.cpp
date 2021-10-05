@@ -1,5 +1,6 @@
 #include "cabinet.h"
 
+/*Функция для создания структуры с заранее введенными данными*/
 cabinet cab_create()
 {
 	cabinet data;
@@ -9,6 +10,7 @@ cabinet cab_create()
 	return data;
 }
 
+/*Прототип функции для создания структуры с вводимыми пользователем данными*/
 cabinet cab_create(int num, string otd, int ar)
 {
 	cabinet data;
@@ -18,6 +20,22 @@ cabinet cab_create(int num, string otd, int ar)
 	return data;
 }
 
+/*Функция ввода*/
+cabinet cab_get()
+{
+	cabinet data;
+	cout << "_Ввод кабинета_\n";
+	cout << "Введите номер кабинета: ";
+	cin >> data.number;
+	cout << "\nВведите отделение: ";
+	cin >> data.otdelen;
+	cout << "\nВведите площадь кабинета: ";
+	cin >> data.area;
+	cout << "\n\n";
+	return data;
+}
+
+/*Функция вывода*/
 void cab_view(cabinet a)
 {
 	cout << "_Кабинет_\n";
@@ -30,6 +48,7 @@ void cab_view(cabinet a)
 	cout << " ||\n\n";
 }
 
+/*Пользовательская функция (вывод площади конкретного кабинета)*/
 void area_get(cabinet a)
 {
 	cout << "Площадь кабинета с номером ";

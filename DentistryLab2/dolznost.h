@@ -13,8 +13,8 @@ struct dolznost
 
 /*Прототипы функций для структуры типа dolznost*/
 
-dolznost dl_create();
-dolznost dl_create(string ti, string pod);
-dolznost dl_get();
-void dl_view(dolznost a);
-void dolzn_pochet(dolznost a);
+dolznost dl_create();	//Функция создания 
+dolznost dl_create(string ti, string pod);	//Функция создания (с параметрами)
+dolznost dl_get();	//Функция ввода
+void dl_view(dolznost a);	//Функция вывода
+void dolzn_pochet(dolznost a); //Прототип пользовательской функции (вывод названия должности)
